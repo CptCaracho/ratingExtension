@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "URL Rating",
+  "version": "1.0",
+  "description": "Rate URLs as positive, negative, or neutral, and import/export ratings.",
+  "permissions": ["storage", "activeTab", "tabs", "downloads"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["import.html", "import.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
