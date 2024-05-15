@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>List Ratings</title>
+    <style>
+      .rating {
+        display: inline-block;
+        padding: 5px;
+      }
+      .Positive {
+        background-color: green;
+        color: white;
+      }
+      .Negative {
+        background-color: red;
+        color: white;
+      }
+      .Neutral {
+        background-color: orange;
+        color: white;
+      }
+      .url {
+        display: inline-block;
+        padding: 5px;
+        width: 70%;
+      }
+      #ratings-list div {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List of Ratings</h1>
+    <div id="ratings-list"></div>
+    <button id="remove-selected">Remove Selected Ratings</button>
+    <button id="close-window">Close Window</button>
+    <script src="list.js"></script>
+  </body>
+</html>

@@ -30,3 +30,12 @@ function sendMessage(type, data = null) {
     window.close();
   });
 }
+
+document.getElementById("list-ratings").addEventListener("click", function () {
+  chrome.windows.create({
+    url: chrome.runtime.getURL("list.html"),
+    type: "popup",
+    width: 500,
+    height: 600,
+  });
+});
